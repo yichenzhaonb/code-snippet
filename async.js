@@ -8,7 +8,7 @@ function resolveAfter2Seconds() {
   
   async function asyncCall() {
     console.log('calling');
-    const result = resolveAfter2Seconds();
+    const result = await resolveAfter2Seconds();
     console.log(result);
     // expected output: "resolved"
   }
